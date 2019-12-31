@@ -11,6 +11,9 @@ public class Client {
     }
 
 
+    /**
+     * 调用第一种动态代理
+     */
     public void client1() {
         Subject subject = new RealSubject("admin");
         ClassLoader classLoader = subject.getClass().getClassLoader();
@@ -21,9 +24,12 @@ public class Client {
 
     }
 
+    /**
+     * 调用第二种动态代理
+     */
     public void client2() {
-        Subject target  = new RealSubject("amdin");
-        Subject proxy = (Subject) new ProxySubject2(target ).getProxyInstance();
+        Subject target = new RealSubject("amdin");
+        Subject proxy = (Subject) new ProxySubject2(target).getProxyInstance();
         proxy.operation();
 
     }

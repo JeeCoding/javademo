@@ -12,3 +12,11 @@
 
 [java中的工厂模式](https://www.jianshu.com/p/bf8341c75304)
 
+## 代理模式参考内容
+[代理模式及Java实现动态代理](https://www.jianshu.com/p/6f6bb2f0ece9)
+
+[Java三种代理模式：静态代理、动态代理和cglib代理](https://segmentfault.com/a/1190000011291179)
+
+[Java 动态代理详解](https://juejin.im/post/5c1ca8df6fb9a049b347f55c)
+
+
