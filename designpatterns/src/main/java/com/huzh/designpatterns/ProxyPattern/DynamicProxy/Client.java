@@ -6,8 +6,9 @@ import java.lang.reflect.Proxy;
 public class Client {
     public static void main(String[] args) {
         Client client = new Client();
-//        client.client1();
+        client.client1();
         client.client2();
+        client.client3();
     }
 
 
@@ -31,6 +32,16 @@ public class Client {
         Subject target = new RealSubject("amdin");
         Subject proxy = (Subject) new ProxySubject2(target).getProxyInstance();
         proxy.operation();
+
+    }
+
+    /**
+     * 调用第三种动态代理
+     */
+    public void client3() {
+        ProxySubject3 proxySubject3 = new ProxySubject3();
+        Subject subject = (Subject) proxySubject3.bind(new RealSubject("admin"));
+        subject.operation();
 
     }
 }
