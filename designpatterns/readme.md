@@ -19,4 +19,6 @@
 
 [Java 动态代理详解](https://juejin.im/post/5c1ca8df6fb9a049b347f55c)
 
+[Java 动态代理作用是什么？](https://www.zhihu.com/question/20794107)
+
 
