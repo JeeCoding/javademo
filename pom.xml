@@ -13,5 +13,6 @@
     </properties>
     <modules>
         <module>designpatterns</module>
+        <module>html</module>
     </modules>
 </project>
