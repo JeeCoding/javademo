@@ -1,6 +1,6 @@
 # 设计模式
 
-以下为学习设计模式的记录
+以下为学习设计模式的记录,总体参考[Java设计模式：23种设计模式全面解析（超级详细）](http://c.biancheng.net/design_pattern/)
 
 ## 单例模式参考内容
 [单例模式](https://www.runoob.com/design-pattern/singleton-pattern.html)
@@ -20,5 +20,15 @@
 [Java 动态代理详解](https://juejin.im/post/5c1ca8df6fb9a049b347f55c)
 
 [Java 动态代理作用是什么？](https://www.zhihu.com/question/20794107)
+
+## 适配器模式参考内容
+[设计模式 | 适配器模式及典型应用](https://www.cnblogs.com/mingmingcome/p/9810731.html)
+
+[适配器模式](https://blog.csdn.net/wwwdc1012/article/details/82780560)
+
+## 观察者模式参考内容
+[观察者模式](https://www.runoob.com/design-pattern/observer-pattern.html)
+
+[Design Pattern](https://github.com/ToryZhou/design-pattern)
 
 
