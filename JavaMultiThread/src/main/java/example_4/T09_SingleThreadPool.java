@@ -8,7 +8,7 @@ import java.util.concurrent.Executors;
  * 它能保证任务前后一定是顺序执行，先扔的任务一定先执行完；只有等第一个任务执行完才执行第二个任务
  * 用于顺序执行任务
  */
-public class SingleThreadPool {
+public class T09_SingleThreadPool {
     public static void main(String[] args) {
         ExecutorService service = Executors.newSingleThreadExecutor();
         for (int i = 0; i < 5; i++) {

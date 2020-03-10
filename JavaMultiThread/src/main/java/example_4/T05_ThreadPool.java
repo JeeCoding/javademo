@@ -14,7 +14,7 @@ import java.util.concurrent.TimeUnit;
  * 3.线程池里面维护了很多线程，等着你往里扔任务，而扔任务的时候它可以维护着一个任务列表，还没有被执行的任务列表，
  * 同样的它还维护着另外一个队列，complete tasks，结束的任务队列，任务执行结束扔到这个队列里，所以，一个线程池维护着两个队列；
  */
-public class ThreadPool {
+public class T05_ThreadPool {
     public static void main(String[] args) throws InterruptedException {
         ExecutorService service = Executors.newFixedThreadPool(5); //execute submit
         for (int i = 0; i < 6; i++) {

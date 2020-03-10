@@ -7,7 +7,7 @@ import java.util.concurrent.*;
 /**
  * 并行计算的例子
  */
-public class ParallelComputing {
+public class T07_ParallelComputing {
     public static void main(String[] args) throws InterruptedException, ExecutionException {
         long start = System.currentTimeMillis();
         List<Integer> results = getPrime(1, 200000);

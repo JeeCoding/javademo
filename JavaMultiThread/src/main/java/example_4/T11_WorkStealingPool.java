@@ -11,7 +11,7 @@ import java.util.concurrent.TimeUnit;
  * workStealing用于什么场景：就说任务分配的不是很均匀，有的线程维护的任务队列比较长，
  * 有些线程执行完任务就结束了不太合适，所以他执行完了之后可以去别的线程维护的队列里去偷任务，这样效率更高。
  */
-public class WorkStealingPool {
+public class T11_WorkStealingPool {
     public static void main(String[] args) throws IOException {
         ExecutorService service = Executors.newWorkStealingPool();
         int count = Runtime.getRuntime().availableProcessors();    //看cpu多少核的;如果是4核，默认就帮你起4个线程

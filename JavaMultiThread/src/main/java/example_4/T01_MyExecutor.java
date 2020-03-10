@@ -9,7 +9,7 @@ import java.util.concurrent.Executor;
  * 但是Runnable接口里面run方法是没有返回值的也不能抛出异常；而call方法有返回值可以抛异常；
  * Executors: 操作Executor的一个工具类；以及操作ExecutorService，ThreadFactory，Callable等；
  */
-public class MyExecutor implements Executor {
+public class T01_MyExecutor implements Executor {
 
     public void execute(Runnable command) {
         //new Thread(command).run();
@@ -17,7 +17,7 @@ public class MyExecutor implements Executor {
     }
 
     public static void main(String[] args) {
-        new MyExecutor().execute(new Runnable() {
+        new T01_MyExecutor().execute(new Runnable() {
             public void run() {
                 System.out.println("hello execute");
             }

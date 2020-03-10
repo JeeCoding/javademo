@@ -6,7 +6,7 @@ import java.util.concurrent.*;
  * Future: ExecutorService里面有submit方法，它的返回值是Future类型，
  * 因为你扔一个任务进去需要执行一段时间，未来的某一个时间点上，任务执行完了产生给你一个结果，这个Future代表的就是那个Callable的返回值；
  */
-public class MyFuture {
+public class T06_Future {
     public static void main(String[] args) throws InterruptedException, ExecutionException {
         /*FutureTask<Integer> task = new FutureTask<Integer>(new Callable<Integer>(){
             @Override

@@ -8,7 +8,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * 用于定时重复执行 某个任务
  */
-public class ScheduledPool {
+public class T10_ScheduledPool {
     public static void main(String[] args) {
         ScheduledExecutorService service = Executors.newScheduledThreadPool(4);
         service.scheduleAtFixedRate(() -> {
