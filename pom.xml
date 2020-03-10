@@ -15,6 +15,7 @@
     <modules>
         <module>JavaMultiThread</module>
         <module>DesignPatterns</module>
+        <module>HTML</module>
     </modules>
 
     <!--<build>-->
