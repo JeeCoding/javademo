@@ -1,4 +1,4 @@
-package example_4;
+package example_4.c_026;
 
 import java.io.IOException;
 import java.util.Arrays;
@@ -11,7 +11,7 @@ import java.util.concurrent.RecursiveTask;
  * long result = task.join()，因为join本身就是阻塞的，只有等所有的都执行完了，
  * 最后才得出总的执行结果。所以不需要System.in.read了；
  */
-public class MyForkJoinPool2 {
+public class T12_MyForkJoinPool2 {
     static int[] nums = new int[1000000];
     static final int MAX_NUM = 50000;
     static Random r = new Random();

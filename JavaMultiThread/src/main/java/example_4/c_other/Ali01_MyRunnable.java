@@ -1,4 +1,4 @@
-package example_4;
+package example_4.c_other;
 
 import java.util.Date;
 import java.util.concurrent.ArrayBlockingQueue;

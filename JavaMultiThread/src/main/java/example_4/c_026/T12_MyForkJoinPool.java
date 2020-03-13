@@ -1,4 +1,4 @@
-package example_4;
+package example_4.c_026;
 
 import java.io.IOException;
 import java.util.Arrays;
@@ -12,7 +12,7 @@ import java.util.concurrent.RecursiveAction;
  * 把结果进行合并，最后合并到一起join一起，产生一个总的结果。而里面任务的切分你可以自己指定，线程的启动根据你任务切分的规则，
  * 由ForkJoinPool这个线程池自己来维护。
  */
-public class MyForkJoinPool {
+public class T12_MyForkJoinPool {
     static int[] nums = new int[1000000];
     static final int MAX_NUM = 50000;
     static Random r = new Random();
