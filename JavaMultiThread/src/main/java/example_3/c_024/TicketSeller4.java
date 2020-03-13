@@ -1,4 +1,4 @@
-package example_3;
+package example_3.c_024;
 
 import java.util.Queue;
 import java.util.concurrent.ConcurrentLinkedQueue;

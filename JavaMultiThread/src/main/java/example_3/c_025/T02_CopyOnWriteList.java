@@ -1,4 +1,4 @@
-package example_3;
+package example_3.c_025;
 
 import java.util.Arrays;
 import java.util.List;

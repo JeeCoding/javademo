@@ -1,4 +1,4 @@
-package example_3;
+package example_3.c_024;
 
 import java.util.LinkedList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package example_3;
+package example_3.c_025;
 
 import java.util.Random;
 import java.util.concurrent.BlockingQueue;
