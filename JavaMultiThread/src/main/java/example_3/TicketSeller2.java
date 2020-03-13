@@ -29,11 +29,12 @@ public class TicketSeller2 {
             new Thread(() -> {
                 while (tickets.size() > 0) {
 
-//                    try {
-//                        TimeUnit.MILLISECONDS.sleep(10);
-//                    } catch (InterruptedException e) {
-//                        e.printStackTrace();
-//                    }
+
+                    try {
+                        TimeUnit.MILLISECONDS.sleep(10);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
 
                     System.out.println("销售了--" + tickets.remove(0));
                 }
