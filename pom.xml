@@ -17,6 +17,7 @@
         <module>DesignPatterns</module>
         <module>HTML</module>
         <module>Collection</module>
+        <module>JVM</module>
     </modules>
 
     <build>
