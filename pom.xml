@@ -14,9 +14,7 @@
     </properties>
     <modules>
         <module>JavaMultiThread</module>
-        <module>DesignPatterns</module>
-        <module>Collection</module>
-        <module>JVM</module>
+        <module>design-pattern</module>
     </modules>
 
     <build>
