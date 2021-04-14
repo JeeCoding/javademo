@@ -1,8 +1,8 @@
-package com.huzh.behaviorpatterns.TemplateMethod.demo1;
+package com.huzh.behaviorpatterns.template.demo1;
 
 /**
  * @author huzh
- * @Description TODO
+ * @Description 抽象类
  * @Date 2021.4.13 19:48
  */
 public abstract class AbstractClass {

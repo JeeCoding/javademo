@@ -1,4 +1,4 @@
-package com.huzh.behaviorpatterns.TemplateMethod.demo1;
+package com.huzh.behaviorpatterns.template.demo1;
 
 /**
  * @author huzh
