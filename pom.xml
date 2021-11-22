@@ -15,6 +15,7 @@
     <modules>
         <module>JavaMultiThread</module>
         <module>design-pattern</module>
+        <module>tree</module>
     </modules>
 
     <build>
