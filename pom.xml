@@ -15,8 +15,23 @@
     <modules>
         <module>JavaMultiThread</module>
         <module>design-pattern</module>
-        <module>tree</module>
+        <module>tree-demo</module>
     </modules>
+
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.20</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.78</version>
+        </dependency>
+    </dependencies>
 
     <build>
         <plugins>
