@@ -73,4 +73,8 @@ public class TreeUtil {
         }
         return treeNode;
     }
+
+    public static void main(String[] args) {
+
+    }
 }
