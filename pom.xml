@@ -13,7 +13,7 @@
         <java.version>1.8</java.version>
     </properties>
     <modules>
-        <module>JavaMultiThread</module>
+        <module>java-multi-thread</module>
         <module>design-pattern</module>
         <module>tree-demo</module>
     </modules>
