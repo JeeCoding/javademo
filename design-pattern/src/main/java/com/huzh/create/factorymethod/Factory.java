@@ -5,5 +5,5 @@ package com.huzh.create.factorymethod;
  * @date: 2024/6/27 15:34
  */
 public interface Factory {
-    Product factoryMethod();
+    Phone createPhone();
 }

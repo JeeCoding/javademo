@@ -6,7 +6,7 @@ package com.huzh.create.factorymethod;
  */
 public class XiaoMiFactory implements Factory {
     @Override
-    public Product factoryMethod() {
-        return new XiaoMIProduct();
+    public Phone createPhone() {
+        return new XiaoMIPhone();
     }
 }

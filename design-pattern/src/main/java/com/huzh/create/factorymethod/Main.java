@@ -7,7 +7,7 @@ package com.huzh.create.factorymethod;
 public class Main {
     public static void main(String[] args) {
         Factory factory = new XiaoMiFactory();
-        Product product = factory.factoryMethod();
-        product.use();
+        Phone phone = factory.createPhone();
+        phone.call();
     }
 }
