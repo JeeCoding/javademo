@@ -4,9 +4,9 @@ package com.huzh.create.simplefactory;
  * @author: YueXian
  * @date: 2024/6/27 15:40
  */
-public class XiaoMiProduct implements Product {
+public class XiaoMiPhone implements Phone {
     @Override
-    public void use() {
-        System.out.println("xiao mi 11");
+    public void call() {
+        System.out.println("Xiao Mi 11");
     }
 }

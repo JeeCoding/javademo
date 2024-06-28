@@ -6,11 +6,11 @@ package com.huzh.create.simplefactory;
  */
 public class Factory {
 
-    public Product createProduct(String arg) {
+    public Phone createProduct(String arg) {
         if (arg.equals("a")) {
-            return new XiaoMiProduct();
+            return new XiaoMiPhone();
         } else if (arg.equals("b")) {
-            return new HuaWeiProduct();
+            return new HuaWeiPhone();
         }
         return null;
     }

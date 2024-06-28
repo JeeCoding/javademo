@@ -7,7 +7,7 @@ package com.huzh.create.simplefactory;
 public class Main {
     public static void main(String[] args) {
         Factory factory = new Factory();
-        Product product = factory.createProduct("a");
-        product.use();
+        Phone phone = factory.createProduct("a");
+        phone.call();
     }
 }
