@@ -5,16 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.yuexian</groupId>
-        <artifactId>javademo</artifactId>
+        <artifactId>java-algorithms</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <groupId>com.yuexian</groupId>
-    <artifactId>java-algorithms</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>data-structures</module>
-    </modules>
+    <artifactId>data-structures</artifactId>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
