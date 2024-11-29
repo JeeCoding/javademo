@@ -7,7 +7,7 @@ import java.util.concurrent.ConcurrentLinkedQueue;
  * @ClassName TicketSeller4
  * @Description 使用ConcurrentQueue提高并发性
  * @Date 2020/3/13 13:54
- * @Author huzh
+ * @Author yuexian
  * @Version 1.0
  */
 public class TicketSeller4 {

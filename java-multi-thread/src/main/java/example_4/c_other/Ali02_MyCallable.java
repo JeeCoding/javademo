@@ -6,7 +6,7 @@ import java.util.concurrent.Callable;
  * @ClassName Ali02_MyCallable
  * @Description TODO
  * @Date 2020/3/10 17:14
- * @Author huzh
+ * @Author yuexian
  * @Version 1.0
  */
 public class Ali02_MyCallable implements Callable<String> {

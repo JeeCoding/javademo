@@ -8,7 +8,7 @@ import java.util.concurrent.TimeUnit;
  * @ClassName Ali01_ThreadPoolExecutorDemo
  * @Description TODO
  * @Date 2020/3/10 15:43
- * @Author huzh
+ * @Author yuexian
  * @Version 1.0
  */
 public class Ali01_ThreadPoolExecutorDemo {

@@ -8,7 +8,7 @@ import java.util.concurrent.BlockingQueue;
  * @ClassName T06_ArrayBlockingQueue
  * @Description TODO
  * @Date 2020/3/13 15:05
- * @Author huzh
+ * @Author yuexian
  * @Version 1.0
  */
 public class T06_ArrayBlockingQueue {
