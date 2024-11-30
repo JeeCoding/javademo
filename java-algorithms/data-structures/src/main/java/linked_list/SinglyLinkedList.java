@@ -50,9 +50,32 @@ public class SinglyLinkedList<E> implements List<E> {
         return false;
     }
 
+    public void unLink(E e) {
+        if (head == null) {
+            throw new NullPointerException("The list is empty.");
+        }
+        if (e == null) {
+            return;
+        }
+        if (head.item.equals(e)) {
+            head = head.next;
+            size--;
+            return;
+        }
+        Node<E> current = head;
+        while (current.next != null) {
+            if (current.next.item.equals(e)) {
+                current.next = current.next.next;
+                size--;
+                return;
+            }
+            current = current.next;
+        }
+    }
+
     @Override
     public E get(int index) {
-        return node(index).data;
+        return node(index).item;
     }
 
     @Override
@@ -62,7 +85,7 @@ public class SinglyLinkedList<E> implements List<E> {
         } else {
             Node<E> node = head;
             while (node != null) {
-                System.out.print(node.data + " ");
+                System.out.print(node.item + " ");
                 node = node.next;
             }
             System.out.println();
@@ -70,23 +93,23 @@ public class SinglyLinkedList<E> implements List<E> {
     }
 
     Node<E> node(int index) {
-        if (index < 0 || index > size - 1) {
-            return null;
+        if (index < 0 || index >= size) {
+            throw new IndexOutOfBoundsException("Index: " + index + ", Size: " + size);
         }
 
-        Node<E> head = this.head;
-        for(int i = 0; i < index; i++){
-            head = head.next;
+        Node<E> current = this.head;
+        for (int i = 0; i < index; i++) {
+            current = current.next;
         }
-        return head;
+        return current;
     }
 
     private static class Node<E> {
-        E data;
+        E item;
         Node<E> next;
 
-        public Node(E data, Node<E> next) {
-            this.data = data;
+        public Node(E item, Node<E> next) {
+            this.item = item;
             this.next = next;
         }
     }
@@ -98,8 +121,10 @@ public class SinglyLinkedList<E> implements List<E> {
         linkFirst.linkFirst("c");
         linkFirst.linkFirst("d");
         linkFirst.printLinkList();
-        String s1 = linkFirst.get(0);
+        String s1 = linkFirst.get(3);
         System.out.println(s1);
+        linkFirst.unLink("a");
+        linkFirst.printLinkList();
 
         SinglyLinkedList<String> linkLast = new SinglyLinkedList<>();
         linkLast.linkLast("a");
@@ -107,7 +132,9 @@ public class SinglyLinkedList<E> implements List<E> {
         linkLast.linkLast("c");
         linkLast.linkLast("d");
         linkLast.printLinkList();
-        String s2 = linkLast.get(0);
+        String s2 = linkLast.get(3);
         System.out.println(s2);
+        linkLast.unLink("d");
+        linkLast.printLinkList();
     }
 }
