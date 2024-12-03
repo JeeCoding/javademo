@@ -8,7 +8,7 @@ public interface List<E> {
 
     boolean addLast(E e);
 
-    boolean remove(E o);
+    boolean remove(E e);
 
     E get(int index);
 

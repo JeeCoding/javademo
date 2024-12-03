@@ -46,8 +46,9 @@ public class SinglyLinkedList<E> implements List<E> {
     }
 
     @Override
-    public boolean remove(E o) {
-        return false;
+    public boolean remove(E e) {
+        unLink(e);
+        return true;
     }
 
     public void unLink(E e) {
@@ -55,7 +56,7 @@ public class SinglyLinkedList<E> implements List<E> {
             throw new NullPointerException("The list is empty.");
         }
         if (e == null) {
-            return;
+            throw new IllegalArgumentException("Null elements are not supported.");
         }
         if (head.item.equals(e)) {
             head = head.next;
@@ -116,25 +117,23 @@ public class SinglyLinkedList<E> implements List<E> {
 
     public static void main(String[] args) {
         SinglyLinkedList<String> linkFirst = new SinglyLinkedList<>();
-        linkFirst.linkFirst("a");
-        linkFirst.linkFirst("b");
-        linkFirst.linkFirst("c");
-        linkFirst.linkFirst("d");
+        linkFirst.addFirst("a");
+        linkFirst.addFirst("b");
+        linkFirst.addFirst("c");
+        linkFirst.addFirst("d");
         linkFirst.printLinkList();
-        String s1 = linkFirst.get(3);
-        System.out.println(s1);
-        linkFirst.unLink("a");
+        System.out.println(linkFirst.get(3));
+        linkFirst.remove("a");
         linkFirst.printLinkList();
 
         SinglyLinkedList<String> linkLast = new SinglyLinkedList<>();
-        linkLast.linkLast("a");
-        linkLast.linkLast("b");
-        linkLast.linkLast("c");
-        linkLast.linkLast("d");
+        linkLast.addLast("a");
+        linkLast.addLast("b");
+        linkLast.addLast("c");
+        linkLast.addLast("d");
         linkLast.printLinkList();
-        String s2 = linkLast.get(3);
-        System.out.println(s2);
-        linkLast.unLink("d");
+        System.out.println(linkLast.get(3));
+        linkLast.remove("d");
         linkLast.printLinkList();
     }
 }

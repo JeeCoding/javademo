@@ -31,7 +31,7 @@ public class LinkedList<E> implements List<E> {
     }
 
     @Override
-    public boolean remove(Object o) {
+    public boolean remove(Object e) {
         return false;
     }
 
