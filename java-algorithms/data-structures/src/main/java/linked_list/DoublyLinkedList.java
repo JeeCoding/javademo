@@ -35,11 +35,11 @@ public class DoublyLinkedList<E> implements List<E> {
     }
 
     public static void main(String[] args) {
-//        DoublyLinkedList<Integer> list = new DoublyLinkedList<>();
-//        list.linkFirst(1);
-//        list.linkFirst(2);
-//        list.linkFirst(3);
-//        list.printLinkList();
+        DoublyLinkedList<Integer> list = new DoublyLinkedList<>();
+        list.linkFirst(1);
+        list.linkFirst(2);
+        list.linkFirst(3);
+        list.printLinkList();
 
         DoublyLinkedList<Integer> list2 = new DoublyLinkedList<>();
         list2.linkLast(1);
