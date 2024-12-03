@@ -21,12 +21,31 @@ public class DoublyLinkedList<E> implements List<E> {
         size++;
     }
 
+    public void linkLast(E e) {
+        Node<E> l = last;
+        Node<E> eNode = new Node<>(l, e, null);
+        last = eNode;
+
+        if (l == null) {
+            first = eNode;
+        } else {
+            l.next = eNode;
+        }
+        size++;
+    }
+
     public static void main(String[] args) {
-        DoublyLinkedList<Integer> list = new DoublyLinkedList<>();
-        list.linkFirst(1);
-        list.linkFirst(2);
-        list.linkFirst(3);
-        list.printLinkList();
+//        DoublyLinkedList<Integer> list = new DoublyLinkedList<>();
+//        list.linkFirst(1);
+//        list.linkFirst(2);
+//        list.linkFirst(3);
+//        list.printLinkList();
+
+        DoublyLinkedList<Integer> list2 = new DoublyLinkedList<>();
+        list2.linkLast(1);
+        list2.linkLast(2);
+        list2.linkLast(3);
+        list2.printLinkList();
     }
 
     @Override
