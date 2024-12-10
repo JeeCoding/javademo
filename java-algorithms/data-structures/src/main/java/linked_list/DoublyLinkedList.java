@@ -34,43 +34,71 @@ public class DoublyLinkedList<E> implements List<E> {
         size++;
     }
 
-    public static void main(String[] args) {
-        DoublyLinkedList<Integer> list = new DoublyLinkedList<>();
-        list.linkFirst(1);
-        list.linkFirst(2);
-        list.linkFirst(3);
-        list.printLinkList();
-
-        DoublyLinkedList<Integer> list2 = new DoublyLinkedList<>();
-        list2.linkLast(1);
-        list2.linkLast(2);
-        list2.linkLast(3);
-        list2.printLinkList();
-    }
-
     @Override
     public boolean add(E e) {
-        return false;
+        linkLast(e);
+        return true;
     }
 
     @Override
     public boolean addFirst(E e) {
-        return false;
+        linkFirst(e);
+        return true;
     }
 
     @Override
     public boolean addLast(E e) {
-        return false;
+        linkLast(e);
+        return true;
     }
 
     @Override
     public boolean remove(E e) {
+        if (e == null) {
+            for (Node<E> x = first; x != null; x = x.next) {
+                if (x.item == null) {
+                    unLink(x);
+                    return true;
+                }
+            }
+        } else {
+            for (Node<E> x = first; x != null; x = x.next) {
+                if (e.equals(x.item)) {
+                    unLink(x);
+                    return true;
+                }
+            }
+        }
         return false;
+    }
+
+    E unLink(Node<E> x) {
+        E element = x.item;
+        Node<E> p = x.prev;
+        Node<E> n = x.next;
+
+        if (p == null) {
+            first = n;
+        } else {
+            p.next = n;
+            x.prev = null;
+        }
+
+        if (n == null) {
+            last = p;
+        } else {
+            n.prev = p;
+            x.next = null;
+        }
+
+        x.item = null;
+        size--;
+        return element;
     }
 
     @Override
     public E get(int index) {
-        return null;
+        return node(index).item;
     }
 
     @Override
@@ -78,11 +106,28 @@ public class DoublyLinkedList<E> implements List<E> {
         if (size == 0) {
             System.out.println("Empty List");
         } else {
-            while (first != null) {
-                System.out.print(first.item + " ");
-                first = first.next;
+            Node<E> x = first;
+            while (x != null) {
+                System.out.print(x.item + " ");
+                x = x.next;
             }
             System.out.println();
+        }
+    }
+
+    Node<E> node(int index) {
+        if (index < (size >> 1)) {
+            Node<E> x = first;
+            for (int i = 0; i < index; i++) {
+                x = x.next;
+            }
+            return x;
+        } else {
+            Node<E> x = last;
+            for (int i = size - 1; i > index; i--) {
+                x = x.prev;
+            }
+            return x;
         }
     }
 
@@ -96,5 +141,21 @@ public class DoublyLinkedList<E> implements List<E> {
             this.item = item;
             this.next = next;
         }
+    }
+
+    public static void main(String[] args) {
+        DoublyLinkedList<Integer> list = new DoublyLinkedList<>();
+        list.add(1);
+        list.add(2);
+        list.add(3);
+        list.add(4);
+        list.add(5);
+        list.add(6);
+        list.add(7);
+        list.printLinkList();
+        list.remove(2);
+        list.printLinkList();
+        System.out.println(list.get(2));
+
     }
 }
