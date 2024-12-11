@@ -131,7 +131,7 @@ public class DoublyLinkedList<E> implements List<E> {
         }
     }
 
-    private class Node<E> {
+    private static class Node<E> {
         Node<E> prev;
         E item;
         Node<E> next;
